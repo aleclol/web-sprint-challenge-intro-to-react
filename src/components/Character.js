@@ -12,6 +12,8 @@ const CharacterStyle = styled.div`
 h2{
     font-family: 'Georgia';
     color: gold;
+    padding-bottom: 6px;
+    border-bottom: solid darkgray 1px;
 }
 
 `
