@@ -12,10 +12,10 @@ function Container (props){
 console.log(props)
 return (
     <ContainerStyle>
-        {props.characters.map((value, i) => {
+        {props.characters === true ? props.characters.map((value, i) => {
             //console.log(value);
             return <Character characters={value} key={i} />
-        })}
+        }) : "Loading..."}
     </ContainerStyle>
 )
 
