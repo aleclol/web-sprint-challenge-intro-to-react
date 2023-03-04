@@ -9,13 +9,12 @@ const ContainerStyle = styled.div`
 `
 
 function Container (props){
-console.log(props)
+
 return (
     <ContainerStyle>
-        {props.characters === true ? props.characters.map((value, i) => {
-            //console.log(value);
+        {props.characters.length > 0 && props.characters.map((value, i) => {
             return <Character characters={value} key={i} />
-        }) : "Loading..."}
+        })}
     </ContainerStyle>
 )
 

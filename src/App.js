@@ -15,14 +15,12 @@ const App = () => {
   useEffect(() => {
     axios.get(`https://swapi.dev/api/people/`)
         .then(res => {
-          // console.log(res)
-          // console.log('hiiiii')
           setCharacters(res.data)
         })
         .catch(err => console.log(err))
-  }, [])
+  }, [Container])
 
-  console.log('test1a')
+  console.log('test1')
   console.log(characters)
   console.log('test2')
 
